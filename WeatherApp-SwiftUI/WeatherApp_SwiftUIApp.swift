@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-@main
-struct WeatherApp_SwiftUIApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
-}
+//@main
+//struct WeatherApp_SwiftUIApp: App {
+//    var body: some Scene {
+//        WindowGroup {
+//            ContentView()
+//        }
+//    }
+//}
