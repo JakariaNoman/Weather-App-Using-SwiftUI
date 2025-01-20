@@ -16,11 +16,11 @@ final class APIManager {
     //(Result<[ProductInfo],DataError>) -> Void
     static func fetchWeatherData(completion: @escaping (Result<WeatherInfo, DataError>)-> Void) {
         
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?&appid=83e0371b238e111391e19337fb58cf1c&units=metric&q=Barisal") else {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?&appid=83e0371b238e111391e19337fb58cf1c&units=metric&q=Rangpur") else {
             completion(.failure(.invalidError))
             return
         }
-        
+
         URLSession.shared.dataTask(with: url) { data, _, error in
             
             guard let data , error == nil else {
